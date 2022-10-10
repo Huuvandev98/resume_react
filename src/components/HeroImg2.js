@@ -1,4 +1,4 @@
-import "./HeroImg2Style.css";
+import "./HeroImg2Style.scss";
 import React, { Component } from "react";
 
 class HeroImg2 extends Component {

@@ -14,18 +14,18 @@
 }
 .nav-menu{
     display: flex;
-}
-
-.nav-menu li{
-    padding: 0 1rem;
-}
-.nav-menu li a{
-    font-size: 1.2rem;
-    font-weight: 500;
+    li{
+        padding: 0 1rem;
+        a{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    }
 }
 .hamburger{
     display:none;
 }
+
 @media screen and (max-width: 1040px){
     .nav-menu{
         flex-direction: column;
@@ -39,17 +39,16 @@
         left: -100%;
         z-index: -3;
         transition: 0.3s;
-    }
-
-    .nav-menu.active{
-        left: 0;
-    }
-    .nav-menu li{
-        padding: 1rem 0;
-
-    }
-    .nav-menu li a{
-        font-size: 2rem;
+        &.active{
+            left: 0;
+        }
+        li{
+            padding: 1rem 0;
+            a{
+                font-size: 2rem;
+            }
+        }
+       
     }
     .hamburger{
         display: initial;
